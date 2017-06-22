@@ -3,13 +3,9 @@ package Pond5_Footage_Test;
 import org.testng.annotations.Test;
 
 import org.testng.AssertJUnit;
-//import org.testng.annotations.Test;
 
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.AfterTest;
-
-import java.util.NoSuchElementException;
-import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -17,10 +13,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.FluentWait;
-import org.openqa.selenium.support.ui.Wait;
-
 
 public class Footage_Tests {
 
@@ -37,8 +29,8 @@ public WebDriver driver;
 			 * Remember to use // in windows path folder 
 			 */
 			//System.setProperty("webdriver.gecko.driver","C://path_to_geckodriver//");
-	        //System.setProperty("webdriver.chrome.driver","C://path_to_chromedriver//");
-			System.out.println ("Windows");
+		        System.setProperty("webdriver.chrome.driver","C://chromedriver.exe");
+			//System.out.println ("Windows");
 			// Maximize Chrome window on Windows
 			ChromeOptions chromeOptions = new ChromeOptions();
 			chromeOptions.addArguments("--start-maximized");
